@@ -106,6 +106,148 @@ body, html {
 
 
 
+
+
+/**************************************
+ *
+ * Begin calendar support
+ *
+ **************************************/
+
+
+ul 
+{
+  list-style-type: none;
+}
+
+#monthtitle
+{
+  display:inline-block;
+}
+
+.calendar
+{
+  background: #ffffff;
+  padding-bottom:16px;
+  border-radius: 16px;
+}
+
+/* Month header */
+.month 
+{
+  padding: 16px 16px;
+  text-align: center;
+  font-weight:700;
+}
+
+/* Month list */
+.month ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li 
+{
+  color: #7a909b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Previous button inside month header */
+.month .prev 
+{
+  float: left;
+}
+/* Next button */
+.month .next 
+{
+  float: right;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays 
+{
+  margin: 0;
+  padding: 0 0;
+}
+
+.weekdays li 
+{
+  display: inline-block;
+  color: #7a909b;
+  text-align: center;
+  margin-bottom:8px;
+}
+
+/* Days (1-31) */
+.weekdays, #days {
+    padding: 0 0;
+    padding-left: 16px;
+}
+
+.weekdays li, #days li 
+{
+  width: 13.6%;
+}
+
+#days li 
+{
+  border: 0.01250in solid #e8e8e8;
+}
+
+#days li 
+{
+  list-style-type: none;
+  display: inline-block;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.previousmonth
+{
+  color: #dfdfdf;
+}
+
+.thismonth
+{
+  cursor:pointer;
+  color: #b18bd8;
+}
+
+/* Highlight the "current" day */
+.active 
+{
+  background: #b18bd8 !important;
+  color: #ffffff !important;
+}
+
+.unselectable {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
+
+
+/**************************************
+ *
+ * End calendar support
+ *
+ **************************************/
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1025px) {
     .wrapper {
         flex-direction: column;
