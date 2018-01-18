@@ -1,0 +1,131 @@
+body, html {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hind;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    /*min-width: 50vw;*/
+    /*min-height: 85vh;*/
+    flex-wrap: wrap;
+}
+
+.column:first-child {
+    flex: 0.8;
+    margin-right: auto;
+}
+
+.column:nth-child(2) {
+    align-items: right;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.column > * {
+    margin: 10px;
+    border: 1px solid #979797;
+    border-radius: 6px;
+}
+
+.column:first-child > * {
+    width: 400px;
+}
+
+.column:first-child > *:first-child {
+    min-height: 200px;
+    background: url("Knipsel.PNG");
+    background-size: cover;
+}
+
+.column:first-child > *:nth-child(2) {
+    margin-top: 25px;
+    min-height: 450px;
+    background: url("Knipsel-2.PNG");
+    background-size: cover;
+}
+
+.column:nth-child(2) > *:first-child {
+    width: 490px;
+    min-height: 490px;
+    align-self: flex-end;
+}
+
+.column:nth-child(2) > *:nth-child(2) {
+    width: 490px;
+    min-height: 173px;
+    align-self: flex-end;
+    border: none;
+}
+
+.to-do {
+    display: flex;
+    flex-direction: row;
+}
+
+.memo {
+    flex: 1;
+    background: url("Knipsel-3.PNG");
+    background-size: cover;
+}
+
+.voice {
+    flex: 2;
+}
+
+.voice p:first-child {
+    text-align: right;
+    color: #253C78;
+    font-family: Hind;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.voice p:nth-child(2), :nth-child(3) {
+
+    color: rgba(0, 0, 0, 0.38);
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: right;
+}
+
+
+
+
+
+@media (max-width: 1025px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .column {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .column:first-child {
+        margin-right: 0;
+    }
+
+    .column:nth-child(2) > *:first-child, :nth-child(2) {
+    align-self: center;
+    }
+
+    .column > * {
+        width:100%;
+        min-width: 490px;
+    }
+}
