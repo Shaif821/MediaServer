@@ -7,6 +7,11 @@ function postit()
   note.style.left = Math.floor(400*Math.random())+"px";
   note.style.top  = Math.floor(600*Math.random())+"px";
 
+  var degrees = Math.floor(-20+40*Math.random());
+  note.style["-ms-transform:"] = "rotate("+degrees+"deg)"
+  note.style["-webkit-transform"] = "rotate("+degrees+"deg)"
+  note.style["transform"] = "rotate("+degrees+"deg)"
+
   var removeButton=document.createElement('a');
   removeButton.innerHTML = "X";
   note.appendChild(removeButton);
