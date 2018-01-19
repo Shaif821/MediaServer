@@ -73,7 +73,7 @@ body, html {
     flex-direction: row;
 }
 
-.memo {
+#memo {
     flex: 1;
     background: url("Knipsel-3.PNG");
     background-size: cover;
