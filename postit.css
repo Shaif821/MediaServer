@@ -1,0 +1,21 @@
+
+.postit
+{
+  display:inline-block;
+  background:#f3ed90;
+  position:absolute;
+  width:300px;
+  height:200px;
+  z-index:1000;
+}
+
+
+.postit-text
+{
+  display:inline-block;
+  margin:16px;
+}
+
+[draggable=true] {
+    cursor: move;
+}
