@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Media server</title>
     <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="calendar.css" type="text/css">
+    <script src="calendar.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="postit.css" type="text/css">
+    <script src="postit.js" type="text/javascript"></script>
+
+
     <link rel="stylesheet" type="text/css" href="stylesheet.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+
 </head>
 <body>
 
@@ -22,11 +32,11 @@
 
     <div class="column">
         <div class="agenda">
-            <p>Hier komt de agenda</p>
+          <div id="calendar"></div> 
         </div>
 
         <div class="to-do">
-            <div class="memo"></div>
+            <div id="memo" onclick="javascript:postit()"></div>
 
             <div class="voice">
                 <p>Where would you like to go?</p>
