@@ -15,7 +15,7 @@ ul
   display:inline-block;
 }
 
-.calendar
+#calendar
 {
   background: #ffffff;
   padding-bottom:16px;

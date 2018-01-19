@@ -59,6 +59,27 @@ function onloadThisScript()
   {
     prev_onload();
   }
+
+
+  var calendarElement = document.getElementById("calendar");
+  if (calendar)
+  {
+    calendar.innerHTML = 
+    ""+
+
+  "<div class='month'>" +
+  "  <ul>" +
+  "    <li class='prev unselectable' onclick='javascript:GoMonth(-1);'>&#10094;</li>" +
+  "    <li class='next unselectable' onclick='javascript:GoMonth( 1);'>&#10095;</li>" +
+  "    <li id='monthtitle' class='unselectable'>December 2017</li>" +
+  "  </ul>" +
+  "</div>" +
+  "<ul class='weekdays'><li class='unselectable'>Mo</li><li class='unselectable'>Tu</li><li class='unselectable'>We</li><li class='unselectable'>Th</li><li class='unselectable'>Fr</li><li class='unselectable'>Sa</li><li class='unselectable'>Su</li></ul>" +
+  "<ul id='days'><li class='previousmonth'>28</li><li class='previousmonth'>29</li><li class='previousmonth'>30</li><li class='thismonth'>1</li><li class='thismonth'>2</li><li class='thismonth'>3</li><li class='thismonth'>4</li><li class='thismonth'>5</li><li class='thismonth'>6</li><li class='thismonth'>7</li><li class='thismonth'>8</li><li class='thismonth'>9</li><li class='thismonth active'>10</li><li class='thismonth'>10</li><li class='thismonth'>11</li><li class='thismonth'>12</li><li class='thismonth'>13</li><li class='thismonth'>14</li><li class='thismonth'>15</li><li class='thismonth'>16</li><li class='thismonth'>17</li><li class='thismonth'>18</li><li class='thismonth'>19</li><li class='thismonth'>20</li><li class='thismonth'>21</li><li class='thismonth'>22</li><li class='thismonth'>23</li><li class='thismonth'>24</li><li class='thismonth'>25</li><li class='thismonth'>26</li><li class='thismonth'>27</li><li class='thismonth'>28</li><li class='thismonth'>29</li><li class='thismonth'>30</li><li class='thismonth'>31</li></ul>";
+
+
+  }
+
   SetDate(TodayDate());
 }
 
